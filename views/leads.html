@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leads</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../assets/img/elements/Pg1/logo.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body class="bg-main">
+    <div class="container-fluid py-3">
+        <div class="d-lg-none fixed-top nav-wrap">
+            <button class="btn btn-menu">MENU</button>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="sidebar-mini py-5">
+                    <div class="d-flex flex-column justify-content-between align-items-center sidebar-mini-inner">
+                        <div class="logo-wrap">
+                            <img src="../assets/img/elements/Pg1/logo.png" alt="logo">
+                        </div>
+                        <ul class="nav flex-column justify-content-center">
+                            <li class="nav-item my-2">
+                                <a href="dashboard.html" class="nav-link" data-toggle="tooltip" data-placement="right"
+                                    title="Dashboard">
+                                    <img class="icon" src="../assets/img/elements/Pg1/Dashboard.png" alt="Dashboard">
+                                </a>
+                            </li>
+                            <li class="nav-item my-2 active">
+                                <a href="leads.html" class="nav-link" data-toggle="tooltip" data-placement="right"
+                                    title="Leads">
+                                    <img class="icon" src="../assets/img/elements/Pg1/leads generated.png" alt="leads">
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a href="tutorial.html" class="nav-link" data-toggle="tooltip" data-placement="right"
+                                    title="Tutorials">
+                                    <img class="icon" src="../assets/img/elements/Pg1/tutorials.png" alt="tutorials">
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a href="profile.html" class="nav-link" data-toggle="tooltip" data-placement="right"
+                                    title="Profile Setting">
+                                    <img class="icon" src="../assets/img/elements/Pg1/profile settings.png"
+                                        alt="profile settings">
+                                </a>
+                            </li>
+                            <li class="nav-item my-2">
+                                <a href="domain.html" class="nav-link" data-toggle="tooltip" data-placement="right"
+                                    title="Domains">
+                                    <img class="icon" src="../assets/img/elements/Pg1/website created.png"
+                                        alt="Domains">
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="Sign Out">
+                            <img class="icon" src="../assets/img/elements/Pg1/Signout.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10 py-5 pl-0">
+                <div class="container">
+                    <h5 class="title">
+                        Lead search
+                    </h5>
+                    <div class="row mt-5">
+                        <div class="col-12 col-lg-9">
+                            <form action="" method="get">
+                                <div class="row">
+
+                                    <div class="col-12 col-md-3">
+                                        <div class="form-group">
+                                            <!-- <label for="keyword"></label> -->
+                                            <input type="text" name="keyword" id="keyword"
+                                                class="form-control search-keyword" placeholder="keyword">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-3">
+                                        <div class="form-group">
+                                            <!-- <label for="keyword"></label> -->
+                                            <input type="text" name="country" id="country"
+                                                class="form-control search-country" placeholder="country">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-3">
+                                        <div class="form-group">
+                                            <!-- <label for="keyword"></label> -->
+                                            <input type="text" name="distance" id="distance"
+                                                class="form-control search-distance" placeholder="distance">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-3">
+                                        <div class="form-group">
+                                            <!-- <label for="keyword"></label> -->
+                                            <button type="button" name="" id=""
+                                                class="btn btn-primary btn-block search-btn">Search</button>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </form>
+                            <div class="row mt-4">
+                                <div class="col-12 col-md-3">
+                                    <div class="form-group">
+                                        <label for="email-filter">Email Filter</label>
+                                        <input type="text" name="distance" id="email-filter"
+                                            class="form-control search-email" placeholder="Has Email">
+
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="form-group">
+
+                                        <label for="website-filter">Website Filter</label>
+                                        <select class="form-control website-filter" name="" id="website-filter">
+                                            <option selected value="all">All</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="web-launcher-wrap">
+                                <div class="web-launcher" data-toggle="tooltip" data-placement="bottom"
+                                    title="LAUNCH WEBSITE BUILDER">
+                                    <img class="icon" src="../assets/img/elements/Pg1/Launch website builder.png"
+                                        alt="Launch web builder">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <h5 class="title">
+                                Search result
+                            </h5>
+                            <div class="export-leads title">
+                                <a class="text-dark" href="#" data-toggle="modal" data-target="#mailmodal">
+                                    <img class="icon mr-2" src="../assets/img/elements/Pg3/export leads.png"
+                                        alt="export leads">
+                                    Export Leads
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="table-responsive">
+
+                        <table class="table table-hover table-inverse">
+                            <!-- <thead class="thead-inverse">
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead> -->
+                        <div class="d-dlex">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-sort-enable active">
+                                    <input type="checkbox" name="" id="" checked autocomplete="off">
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-sort active">Business Name</button>
+                            <button type="button" class="btn btn-sort">Address</button>
+                            <button type="button" class="btn btn-sort">Website</button>
+    
+                            <button type="button" class="btn btn-sort">Phone</button>
+                            <button type="button" class="btn btn-sort">Email</button>
+                            <button type="button" class="btn btn-sort">Rating</button>
+                            <button type="button" class="btn btn-sort">Status</button>
+    
+                            <button type="button" class="btn btn-sort">Action</button>
+                        </div>
+                            <tbody>
+                                <tr>
+                                    <td scope="row"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="footer">
+                    © 2020 AIWA
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="mailmodal" tabindex="-1" role="dialog" aria-labelledby="mailmodalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <form>
+                        <div class="mail-info">
+                            <div class="form-group px-5">
+                                <label for="recipient-name" class="col-form-label">To</label>
+                                <input type="text" class="form-control" id="mail-to">
+                            </div>
+                            <div class="form-group px-5">
+                                <label for="recipient-name" class="col-form-label">From</label>
+                                <select class="form-control w-50" name="" id="">
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                                <div class="mail-type">
+                                    Cc Bc
+                                </div>
+
+                            </div>
+                            <div class="form-group px-5">
+                                <label for="recipient-name" class="col-form-label">Subject</label>
+                                <input type="text" class="form-control" id="mail-subject">
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="btn btn-mail-send">SEND</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                   
+                    
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
