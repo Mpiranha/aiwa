@@ -568,14 +568,14 @@ body {
 
 .user-bar {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #ffffff;
-    position: fixed;
-    top: 0;
-    min-width: 27%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  min-width: 27%;
 
 }
 
@@ -876,6 +876,78 @@ body {
   animation-fill-mode: forwards;
 }
 
+.login-logo-wrap img {
+  width: 6rem;
+}
+
+.login-left-wrap {
+  background: #d43c0d;
+    border-radius: 3rem 0 0 3rem;
+    min-height: 70vh;
+
+}
+
+.login-left {
+  padding: 1rem 2rem;
+  background-image: url(../img/bg-half-right-circle.png), url(../img/bg-half-left-circle.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -28px 20%, 103% 100%;
+  background-size: 44px, 53px;
+  min-height: 60vh;
+  width: 100%;
+}
+
+.login-left .text-content {
+  color: #fff;
+  margin: 4rem 0px;
+}
+
+.read-more {
+  color: #ffffff;
+  position: relative;
+}
+
+.read-more::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  width: 70px;
+  top: -9px;
+}
+
+.login-wrap {
+  background: #ffffff;
+  border-radius: 0 3rem 3rem 0;
+  min-height: 70vh;
+  padding: 5rem 5rem 2rem 3rem;
+  height: 100%;
+}
+
+.login-wrap .title {}
+
+.btn-login {
+  background-color: #d43c0d;
+  color: #fff;
+}
+
+#username,
+#password {
+  border: none;
+  border-bottom: 1px solid #9c9a9a;
+  border-radius: 0;
+}
+
+.login-form .form-group label {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.sign-in-methods .nav-link img {
+  width: 2rem;
+}
+
 
 
 @-webkit-keyframes fade {
@@ -906,12 +978,12 @@ body {
   .dashboard-stat .icon {
     width: 1.5rem;
     margin-right: 1rem;
-}
+  }
 
-.dashboard-stat .value {
-  font-size: 1.4rem;
+  .dashboard-stat .value {
+    font-size: 1.4rem;
 
-}
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -921,61 +993,64 @@ body {
     margin-left: 1rem;
     height: 1rem;
     margin-top: 0.6rem;
-}
-.sidebar-mini {
-  display: none;
-  z-index: 9999;
-}
+  }
 
-.icon {
-  width: 1.5rem;
-}
+  .sidebar-mini {
+    display: none;
+    z-index: 9999;
+  }
 
-.notification .more-btn {
-  padding: 0.8rem 2rem;
-}
+  .icon {
+    width: 1.5rem;
+  }
 
-.notification .notification-text {
-  font-size: 1rem;
-}
+  .notification .more-btn {
+    padding: 0.8rem 2rem;
+  }
 
-.user-bar {
-  position: static;
+  .notification .notification-text {
+    font-size: 1rem;
+  }
 
-}
+  .user-bar {
+    position: static;
 
-.site-options {
-  align-items: start;
-}
+  }
 
-.web-launcher-wrap {
-  margin: 1rem 0;
-}
+  .site-options {
+    align-items: start;
+  }
 
-.web-launcher .icon {
-  width: 2rem;
-}
+  .web-launcher-wrap {
+    margin: 1rem 0;
+  }
 
-.h1, h1 {
-  font-size: 1.7rem;
-}
+  .web-launcher .icon {
+    width: 2rem;
+  }
 
-.logo-section img {
-  width: 5.9rem;
-}
+  .h1,
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .logo-section img {
+    width: 5.9rem;
+  }
 
 
 
 }
 
 @media screen and (max-width: 425px) {
-  .user-name{
+  .user-name {
     font-size: .8rem;
   }
-  
+
   .profile-icn {
     width: 1rem;
   }
+
   .user-greeting {
     font-size: .7rem;
   }
@@ -993,48 +1068,81 @@ body {
 
   .export-leads .icon {
     width: 0.6rem;
+  }
+
+  .export-leads a {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .h1,
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .price-desc {
+    font-size: .7rem;
+  }
+
+  .price {
+    font-size: .8rem;
+  }
+
+  .add-domain {
+    font-size: 1.3rem;
+    padding: 0rem 0.5rem;
+    margin-left: .5rem;
+  }
+
+
+  .lead {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  #proceed-summary,
+  #btn-paypal-cont,
+  #btn-proceed-payment {
+    font-size: .8rem;
+  }
+
+  .side-bar {
+
+    border-radius: 0;
+
+  }
+
+  .nav-style {
+    height: 70px;
+  }
+
+  .login-left-wrap {
+    border-radius: 0;
+  }
+
+  .login-wrap {
+    background: #ffffff;
+    border-radius: 0;
+    min-height: 61vh;
+    padding: 4rem 1rem 4rem 1rem;
+  }
 }
 
-.export-leads a {
-  font-size: 1rem;
-}
+@media screen and (min-width: 1024px) {
+  .lg-height {
+    min-height: 100vh;
+    align-items: center;
+  }
 
-.title {
-  font-size: 1rem;
-  font-weight: 700;
-}
+  .login-left-wrap {
+    max-height: 70vh;
+  }
 
-.h1, h1 {
-  font-size: 1.5rem;
-}
-
-.price-desc {
-  font-size: .7rem;
-}
-
-.price {
-  font-size: .8rem;
-}
-
-.add-domain {
-  font-size: 1.3rem;
-  padding: 0rem 0.5rem;
-  margin-left: .5rem;
-}
-
-
-.lead {
-  font-size: 0.9rem;
-  font-weight: 300;
-}
-
-#proceed-summary, #btn-paypal-cont, #btn-proceed-payment {
-  font-size: .8rem;
-}
-
-.nav-style {
-  height: 70px;
-}
+ 
 }
 
 
