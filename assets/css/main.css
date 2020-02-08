@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import 'particles.css';
 
 :root {
   --blue: #007bff;
